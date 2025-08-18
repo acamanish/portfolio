@@ -3,474 +3,802 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Manish Gupta — Finance • Strategy • Research</title>
-  <meta name="description" content="Manish Gupta — high-impact finance professional specializing in credit risk, leveraged lending, underwriting, and strategic research." />
-  <meta property="og:title" content="Manish Gupta — Finance • Strategy • Research" />
-  <meta property="og:description" content="Resume, achievements, projects, research and skills — designed for recruiters in top-tier finance & consulting." />
+  <title>Manish Gupta, CA — Finance | Credit Risk | Strategic Research</title>
+  <meta name="description" content="Manish Gupta (CA) — 9+ years in credit risk, portfolio oversight, and strategic analysis across Utilities, Renewables, P3/Infrastructure, Oil & Gas, B2B lending. High-value underwriting (₹5Cr+), covenant governance, Moody’s CreditLens, LIQ, advanced Excel." />
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:title" content="Manish Gupta, CA — Finance | Credit Risk | Strategic Research" />
+  <meta property="og:description" content="9+ years across credit risk, underwriting, and portfolio oversight. Utilities, Renewables, P3, O&G, B2B. High-value underwriting, covenant monitoring, financial modeling." />
   <meta property="og:type" content="website" />
-  <meta name="theme-color" content="#0b1b2b" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Manish Gupta, CA — Finance | Credit Risk | Strategic Research" />
+  <meta name="twitter:description" content="Finance professional with 9+ years in credit risk, underwriting, and portfolio oversight." />
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Manish Gupta",
+    "jobTitle": "Finance Professional | Credit Risk | Strategic Research",
+    "email": "mailto:ca.mvgupta@gmail.com",
+    "telephone": "+918888634620",
+    "url": "",
+    "sameAs": [
+      "https://www.linkedin.com/in/acamanish/"
+    ]
+  }
+  </script>
+
+  <!-- Fonts (serif for headings, sans for body) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
   <style>
-    :root{
-      --bg:#0b1420;           /* deep navy */
-      --card:#0f1e31;         /* card navy */
-      --muted:#9fb3c8;        /* muted text */
-      --ink:#e6edf6;          /* primary text */
-      --brand:#5cc8ff;        /* accent */
-      --brand-2:#00d4a6;      /* secondary accent */
-      --line:#1b2b44;         /* borders */
-      --chip:#11253d;
-      --chip-brd:#224a7a;
-      --shadow: 0 10px 30px rgba(0,0,0,.25);
-      --radius: 16px;
+    :root {
+      /* Light mode palette */
+      --bg: #0a0c10; /* We'll invert via [data-theme] for clarity */
+      --text: #e8ecf1;
+      --muted: #b5becc;
+      --panel: rgba(255,255,255,0.06);
+      --panel-strong: rgba(255,255,255,0.12);
+      --border: rgba(255,255,255,0.18);
+      --gold: #d4af37;
+      --emerald: #2ecc71;
+      --royal: #7a5cff;
+      --silver: #cfd6e4;
+      --gradient-1: linear-gradient(135deg, rgba(212,175,55,0.16), rgba(122,92,255,0.16));
+      --shadow: 0 10px 30px rgba(0,0,0,0.35);
+      --glass-blur: saturate(160%) blur(10px);
     }
-    *{box-sizing:border-box}
-    html{scroll-behavior:smooth}
-    body{
-      margin:0; font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif;
-      background:linear-gradient(180deg,var(--bg),#0a1730 60%, #08142a);
-      color:var(--ink);
+
+    /* Theme tokens for light/dark with equal care */
+    html[data-theme="dark"] {
+      --bg: #0a0c10; /* deep graphite */
+      --text: #eef3fb;
+      --muted: #afbacb;
+      --panel: rgba(255,255,255,0.06);
+      --panel-strong: rgba(255,255,255,0.12);
+      --border: rgba(255,255,255,0.18);
+      --kpi-chip: rgba(212,175,55,0.14);
     }
-    a{color:var(--brand); text-decoration:none}
-    a:hover{opacity:.9}
-    /* --- Header / Hero --- */
-    .nav{
-      position:sticky; top:0; z-index:50; backdrop-filter:saturate(180%) blur(10px);
-      background:linear-gradient(180deg, rgba(5,11,20,.9), rgba(5,11,20,.4));
-      border-bottom:1px solid var(--line);
+    html[data-theme="light"] {
+      --bg: #f7f8fb; /* porcelain */
+      --text: #1a2230;
+      --muted: #4b5565;
+      --panel: rgba(10,12,16,0.05);
+      --panel-strong: rgba(10,12,16,0.08);
+      --border: rgba(10,12,16,0.12);
+      --kpi-chip: rgba(212,175,55,0.12);
     }
-    .container{width:min(1100px,90%); margin-inline:auto}
-    .nav-inner{display:flex; align-items:center; justify-content:space-between; padding:14px 0}
-    .brand{display:flex; align-items:center; gap:12px; font-weight:700; letter-spacing:.3px}
-    .badge{padding:4px 10px; border:1px solid var(--chip-brd); background:var(--chip); border-radius:999px; color:var(--muted); font-size:12px}
-    .menu{display:flex; gap:18px; flex-wrap:wrap}
-    .menu a{font-size:14px; color:var(--muted)}
-    .cta{display:flex; gap:10px; align-items:center}
-    .btn{display:inline-flex; align-items:center; gap:8px; padding:10px 14px; border-radius:12px; border:1px solid var(--line); color:var(--ink); background:#0c1a2c}
-    .btn.primary{background:linear-gradient(135deg,var(--brand),var(--brand-2)); color:#041019; font-weight:700; border-color:transparent}
-    .btn:hover{transform:translateY(-1px); box-shadow:var(--shadow)}
 
-    header.hero{padding:84px 0 56px; position:relative}
-    .grid{display:grid; grid-template-columns:1.25fr 1fr; gap:28px}
-    @media (max-width:900px){ .grid{grid-template-columns:1fr} header.hero{padding-top:56px} }
-    .card{background:linear-gradient(180deg,rgba(255,255,255,.02),rgba(255,255,255,.00)); border:1px solid var(--line); border-radius:var(--radius); box-shadow:var(--shadow)}
-    .hero-card{padding:28px}
-    .kpis{display:grid; grid-template-columns:repeat(3,1fr); gap:12px; margin-top:18px}
-    .kpi{background:var(--card); border:1px solid var(--line); border-radius:14px; padding:14px}
-    .kpi .h{font-size:12px; color:var(--muted)}
-    .kpi .v{font-size:22px; font-weight:800}
+    /* Base */
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+    h1, h2, h3 { font-family: 'Playfair Display', Georgia, 'Times New Roman', serif; line-height: 1.2; }
+    h1 { font-size: clamp(2rem, 5vw, 3.2rem); }
+    h2 { font-size: clamp(1.6rem, 3.2vw, 2.2rem); margin: 0 0 .5rem; }
+    h3 { font-size: clamp(1.2rem, 2.4vw, 1.4rem); margin: 0 0 .25rem; }
+    p { margin: 0 0 1rem; color: var(--text); }
+    a { color: var(--text); text-decoration: none; }
+    a:focus { outline: 3px solid var(--gold); outline-offset: 2px; }
 
-    .chips{display:flex; flex-wrap:wrap; gap:8px; margin-top:10px}
-    .chip{background:var(--chip); border:1px solid var(--chip-brd); color:var(--muted); padding:6px 10px; border-radius:999px; font-size:12px}
+    .container { width: min(1100px, 92%); margin: 0 auto; }
 
-    section{padding:36px 0}
-    section .section-head{display:flex; align-items:flex-end; justify-content:space-between; gap:10px; margin-bottom:18px}
-    h1{font-size:40px; margin:0 0 6px}
-    h2{font-size:24px; margin:0}
-    p{color:#cfe2f5; line-height:1.65}
-    .muted{color:var(--muted)}
+    /* Skip link */
+    .skip-link { position: absolute; left: -999px; top: auto; width: 1px; height: 1px; overflow: hidden; }
+    .skip-link:focus { position: fixed; left: 1rem; top: 1rem; width: auto; height: auto; padding: .5rem .75rem; background: var(--gold); color: #111; z-index: 9999; border-radius: 6px; }
 
-    /* --- Resume timeline --- */
-    .timeline{display:grid; gap:12px}
-    .role{background:var(--card); border:1px solid var(--line); border-radius:14px; padding:18px}
-    .role-head{display:flex; justify-content:space-between; gap:12px; align-items:baseline}
-    .role h3{margin:0; font-size:18px}
-    .role small{color:var(--muted)}
-    .bullets{margin:10px 0 0 0; padding-left:18px}
-    .bullets li{margin:8px 0}
+    /* Header / Nav */
+    header {
+      position: sticky; top: 0; z-index: 1000; backdrop-filter: var(--glass-blur);
+      background: color-mix(in oklab, var(--panel) 60%, transparent);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav {
+      display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: .8rem 0;
+    }
+    .brand { display: flex; align-items: center; gap: .75rem; }
+    .brand-logo {
+      width: 34px; height: 34px; border-radius: 50%; border: 1px solid var(--border); display: grid; place-items: center;
+      background: radial-gradient(circle at 30% 30%, rgba(212,175,55,.35), transparent 60%);
+      box-shadow: inset 0 0 0 1px rgba(255,255,255,.05);
+    }
+    .brand-title { font-weight: 700; letter-spacing: .3px; }
 
-    /* --- Cards grid --- */
-    .cards{display:grid; grid-template-columns:repeat(3,1fr); gap:14px}
-    @media (max-width:1000px){ .cards{grid-template-columns:repeat(2,1fr)} }
-    @media (max-width:680px){ .cards{grid-template-columns:1fr} }
-    .card-pad{padding:18px}
-    .tag{font-size:11px; letter-spacing:.3px; color:var(--muted)}
-    .card h4{margin:6px 0 6px}
+    .nav-links { display: flex; gap: 1rem; }
+    .nav-links a { padding: .5rem .75rem; border-radius: 999px; border: 1px solid transparent; }
+    .nav-links a:hover { border-color: var(--border); background: var(--panel); }
 
-    /* --- Skills --- */
-    .skill-groups{display:grid; grid-template-columns:repeat(3,1fr); gap:14px}
-    @media (max-width:900px){ .skill-groups{grid-template-columns:1fr} }
+    .controls { display: flex; gap: .5rem; align-items: center; }
+    .btn {
+      border: 1px solid var(--border); background: var(--panel); color: var(--text);
+      padding: .5rem .8rem; border-radius: 999px; cursor: pointer; transition: transform .2s ease, background .2s ease;
+    }
+    .btn:hover { transform: translateY(-1px); background: var(--panel-strong); }
 
-    /* --- Contact --- */
-    .contact{display:grid; grid-template-columns:1fr 1fr; gap:18px}
-    @media (max-width:900px){ .contact{grid-template-columns:1fr} }
-    .input{width:100%; padding:12px 14px; background:#0b1a2c; border:1px solid var(--line); border-radius:12px; color:var(--ink)}
-    .input:focus{outline:2px solid var(--brand); outline-offset:2px}
+    .hamburger { display: none; }
+    .hamburger[aria-expanded="true"] .bar:nth-child(2) { opacity: 0; }
+    .hamburger[aria-expanded="true"] .bar:nth-child(1) { transform: translateY(6px) rotate(45deg); }
+    .hamburger[aria-expanded="true"] .bar:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
+    .bar { width: 20px; height: 2px; background: var(--text); margin: 4px 0; transition: transform .2s ease, opacity .2s ease; display: block; }
 
-    footer{padding:30px 0; border-top:1px solid var(--line); color:var(--muted)}
+    /* Mobile menu */
+    .mobile-menu { display: none; }
+    .mobile-menu.open { display: grid; gap: .5rem; padding: .75rem; border-top: 1px solid var(--border); background: var(--panel); }
 
-    /* --- Helpers --- */
-    .row{display:flex; gap:10px; flex-wrap:wrap; align-items:center}
-    .right{margin-left:auto}
-    .code{font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; font-size:12px}
+    /* Hero */
+    .hero {
+      position: relative; isolation: isolate; overflow: hidden; padding: clamp(4rem, 8vw, 8rem) 0 4rem;
+      background: radial-gradient(1200px 600px at 10% 10%, rgba(212,175,55,.14), transparent 60%),
+                  radial-gradient(1200px 600px at 90% 30%, rgba(122,92,255,.12), transparent 60%),
+                  linear-gradient(180deg, transparent, rgba(0,0,0,.2));
+    }
+    .hero::before {
+      content: ""; position: absolute; inset: -20vh -10vw; background: url('data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"1600\" height=\"900\" viewBox=\"0 0 1600 900\"><defs><linearGradient id=\"g\" x1=\"0\" y1=\"0\" x2=\"1\" y2=\"1\"><stop offset=\"0%\" stop-color=\"%23d4af37\" stop-opacity=\"0.06\"/><stop offset=\"100%\" stop-color=\"%237a5cff\" stop-opacity=\"0.06\"/></linearGradient></defs><rect width=\"1600\" height=\"900\" fill=\"url(%23g)\"/></svg>') center/cover no-repeat;
+      transform: translateY(var(--parallax, 0px)); will-change: transform; pointer-events: none; opacity: .9;
+    }
+    .hero-grid { display: grid; grid-template-columns: 1.2fr .8fr; gap: clamp(1.2rem, 3vw, 2rem); align-items: center; }
+    .hero h1 span { background: linear-gradient(90deg, var(--gold), var(--royal)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+    .tagline { color: var(--muted); font-size: 1.05rem; margin: .5rem 0 1.25rem; }
+    .cta { display: flex; flex-wrap: wrap; gap: .6rem; align-items: center; }
+    .cta .btn-primary { background: linear-gradient(90deg, rgba(212,175,55,.16), rgba(122,92,255,.16)); border-color: var(--border); }
+    .kpis { margin-top: 1rem; display: flex; flex-wrap: wrap; gap: .5rem; }
+    .kpi-chip { border: 1px solid var(--border); background: var(--kpi-chip); padding: .4rem .7rem; border-radius: 999px; font-size: .9rem; backdrop-filter: var(--glass-blur); }
 
-    /* --- Back to top --- */
-    .to-top{position:fixed; right:18px; bottom:18px; z-index:60; opacity:0; pointer-events:none; transition:.25s}
-    .to-top.show{opacity:1; pointer-events:auto}
+    .hero-card {
+      border: 1px solid var(--border); border-radius: 18px; padding: 1.1rem; background: var(--panel);
+      box-shadow: var(--shadow); backdrop-filter: var(--glass-blur);
+    }
+    .hero-card h3 { margin-bottom: .4rem; }
+    .hero-card p { color: var(--muted); }
 
-    /* Accessible hide for labels */
-    .sr-only{position:absolute; left:-10000px; top:auto; width:1px; height:1px; overflow:hidden}
+    /* Sections */
+    section { padding: clamp(2.5rem, 6vw, 4rem) 0; }
+    .section-head { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; margin-bottom: 1.2rem; }
+    .section-sub { color: var(--muted); font-size: .95rem; }
+
+    /* Cards */
+    .grid { display: grid; gap: 1rem; }
+    .grid-2 { grid-template-columns: repeat(2, 1fr); }
+    .grid-3 { grid-template-columns: repeat(3, 1fr); }
+
+    .card {
+      position: relative; border: 1px solid var(--border); border-radius: 16px; background: var(--panel);
+      padding: 1rem; overflow: hidden; transition: transform .25s ease, border-color .25s ease, background .25s ease;
+      backdrop-filter: var(--glass-blur);
+    }
+    .card::after { content: ""; position: absolute; inset: 0; background: radial-gradient(600px 200px at -10% -10%, rgba(212,175,55,.12), transparent 60%); pointer-events: none; }
+    .card:hover { transform: translateY(-3px); border-color: color-mix(in oklab, var(--gold) 30%, var(--border)); }
+    .muted { color: var(--muted); }
+    ul.clean { margin: .25rem 0 0 1rem; padding: 0; }
+    ul.clean li { margin: .3rem 0; }
+
+    /* Timeline */
+    .timeline { position: relative; }
+    .timeline::before { content: ""; position: absolute; left: 10px; top: 0; bottom: 0; width: 2px; background: var(--border); }
+    .t-item { position: relative; padding-left: 2.2rem; margin: 1rem 0; }
+    .t-item::before { content: ""; position: absolute; left: 3px; top: .2rem; width: 14px; height: 14px; border-radius: 50%; border: 2px solid var(--gold); background: var(--bg); }
+
+    /* Tabs (Research) */
+    .tabs { display: flex; gap: .5rem; flex-wrap: wrap; margin-bottom: .75rem; }
+    .tab-btn { padding: .45rem .75rem; border-radius: 999px; border: 1px solid var(--border); background: var(--panel); cursor: pointer; }
+    .tab-btn[aria-selected="true"] { outline: 2px solid var(--gold); }
+    .tab-panel { display: none; }
+    .tab-panel[aria-hidden="false"] { display: block; }
+
+    /* Skills chips */
+    .chip { display: inline-block; padding: .35rem .6rem; margin: .25rem; border-radius: 999px; border: 1px solid var(--border); background: var(--panel); }
+
+    /* Dashboard */
+    .chart-wrap { display: grid; grid-template-columns: 1fr; gap: 1rem; }
+    .chart { border: 1px solid var(--border); border-radius: 16px; padding: .75rem; background: var(--panel); backdrop-filter: var(--glass-blur); }
+    .chart canvas { width: 100%; height: 260px; display: block; }
+    .chart small { color: var(--muted); }
+    table { width: 100%; border-collapse: collapse; }
+    th, td { text-align: left; padding: .5rem; border-bottom: 1px solid var(--border); }
+
+    /* Contact */
+    form { display: grid; gap: .75rem; }
+    input, textarea { width: 100%; padding: .7rem .8rem; border-radius: 10px; border: 1px solid var(--border); background: color-mix(in oklab, var(--panel) 70%, transparent); color: var(--text); }
+    input::placeholder, textarea::placeholder { color: var(--muted); }
+    .btn-primary { border: 1px solid var(--border); background: linear-gradient(90deg, rgba(212,175,55,.14), rgba(47, 197, 122, .12)); color: var(--text); }
+
+    footer { padding: 2rem 0; border-top: 1px solid var(--border); color: var(--muted); font-size: .95rem; }
+
+    /* Media */
+    @media (max-width: 900px) {
+      .hero-grid { grid-template-columns: 1fr; }
+      .grid-3 { grid-template-columns: 1fr; }
+      .grid-2 { grid-template-columns: 1fr; }
+      .nav-links { display: none; }
+      .hamburger { display: grid; place-items: center; width: 40px; height: 40px; border-radius: 8px; border: 1px solid var(--border); background: var(--panel); }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      * { animation: none !important; transition: none !important; }
+    }
   </style>
 </head>
 <body>
-  <!-- Nav -->
-  <nav class="nav">
-    <div class="container nav-inner">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header role="banner">
+    <div class="container nav" aria-label="Primary">
       <div class="brand">
-        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2l7 4v6c0 5-3.5 8-7 10-3.5-2-7-5-7-10V6l7-4Z" stroke="url(#g)" stroke-width="1.2"/><defs><linearGradient id="g" x1="0" y1="0" x2="24" y2="24"><stop stop-color="#5cc8ff"/><stop offset="1" stop-color="#00d4a6"/></linearGradient></defs></svg>
-        <span>Manish Gupta</span>
-        <span class="badge">Credit Risk • Strategy</span>
+        <div class="brand-logo" aria-hidden="true">◆</div>
+        <div class="brand-title" aria-label="Site title">Manish Gupta, CA</div>
       </div>
-      <div class="menu">
+
+      <nav class="nav-links" aria-label="Main navigation">
         <a href="#about">About</a>
-        <a href="#resume">Resume</a>
+        <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
+        <a href="#dashboard">Impact</a>
         <a href="#research">Research</a>
         <a href="#skills">Skills</a>
+        <a href="#awards">Credentials</a>
         <a href="#contact">Contact</a>
-      </div>
-      <div class="cta">
-        <a class="btn" href="https://www.linkedin.com/in/REPLACE_LINKEDIN" target="_blank" rel="noopener">LinkedIn</a>
-        <a class="btn primary" href="assets/Manish_Gupta_Resume.pdf" download>Download Resume</a>
+      </nav>
+
+      <div class="controls">
+        <button id="themeToggle" class="btn" aria-pressed="false" aria-label="Toggle light/dark mode">🌓</button>
+        <button id="hamburger" class="hamburger" aria-expanded="false" aria-controls="mobileMenu" aria-label="Open menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
       </div>
     </div>
-  </nav>
-
-  <!-- Hero / About -->
-  <header id="about" class="hero">
-    <div class="container grid">
-      <div class="card hero-card">
-        <h1>Finance Professional focused on <span style="color:var(--brand)">Credit Risk</span>, Leveraged Lending & Strategic Research</h1>
-        <p>
-          9+ years across credit underwriting, portfolio oversight, and advisory. Experience spans a <strong>$20B+ portfolio</strong>, high‑value underwriting (₹5Cr+), covenant monitoring, and client service for global financial institutions. CA (ICAI).
-        </p>
-        <div class="chips" aria-label="core highlights">
-          <span class="chip">Credit Risk Assessment</span>
-          <span class="chip">Portfolio Management</span>
-          <span class="chip">Leveraged Lending</span>
-          <span class="chip">Covenant Monitoring</span>
-          <span class="chip">Underwriting (₹5Cr+)</span>
-          <span class="chip">Strategic Advisory</span>
-        </div>
-        <div class="kpis">
-          <div class="kpi"><div class="h">Portfolio Coverage</div><div class="v">$20B+</div></div>
-          <div class="kpi"><div class="h">Years Experience</div><div class="v">9+</div></div>
-          <div class="kpi"><div class="h">Sectors</div><div class="v">Multi‑industry</div></div>
-        </div>
-        <div class="row" style="margin-top:14px">
-          <a class="btn" href="#projects">See Projects</a>
-          <a class="btn" href="#research">View Research</a>
-        </div>
-      </div>
-      <div class="card hero-card" aria-label="analytics demo">
-        <h2 class="muted">Analytics Demo (sample data)</h2>
-        <canvas id="chart1" height="150" aria-label="Demo chart: portfolio risk view" role="img"></canvas>
-        <div class="chips" style="margin-top:14px">
-          <span class="chip">PD / LGD</span>
-          <span class="chip">Covenant Flags</span>
-          <span class="chip">Limit Utilization</span>
-          <span class="chip">Industry Concentration</span>
-        </div>
-        <p class="muted" style="margin-top:8px">Illustrative visualization with anonymized sample data to showcase analytical approach.</p>
-      </div>
+    <div id="mobileMenu" class="mobile-menu" role="dialog" aria-modal="false" aria-label="Mobile navigation">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#dashboard">Impact</a>
+      <a href="#research">Research</a>
+      <a href="#skills">Skills</a>
+      <a href="#awards">Credentials</a>
+      <a href="#contact">Contact</a>
     </div>
   </header>
 
-  <!-- Resume -->
-  <section id="resume">
-    <div class="container">
-      <div class="section-head">
-        <h2>Resume</h2>
-        <div class="row right">
-          <span class="badge">Mumbai, IN • Open to global roles</span>
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div>
+          <h1 id="hero-title">Manish Gupta, <span>Chartered Accountant</span></h1>
+          <p class="tagline">Finance Professional · Credit Risk · Strategic Research · Investment Banking</p>
+          <div class="cta" role="group" aria-label="Primary actions">
+            <a class="btn btn-primary" href="https://drive.google.com/file/d/1JnM9XfpmjLzOmsI1ekdBGfuK4vSPspfn/view?usp=drivesdk" target="_blank" rel="noopener" aria-label="Download resume">⬇ Resume</a>
+            <a class="btn" href="mailto:ca.mvgupta@gmail.com" aria-label="Send email">✉ Email</a>
+            <a class="btn" href="https://www.linkedin.com/in/acamanish/" target="_blank" rel="noopener" aria-label="Open LinkedIn">in LinkedIn</a>
+          </div>
+          <div class="kpis" aria-label="Key highlights">
+            <span class="kpi-chip" aria-label="Portfolio scale">US$20B+ portfolio oversight</span>
+            <span class="kpi-chip" aria-label="Underwriting threshold">High-value underwriting (₹5Cr+)</span>
+            <span class="kpi-chip" aria-label="Leadership">Led & mentored analysts</span>
+            <span class="kpi-chip" aria-label="Sectors">Utilities · Renewables · P3 · O&G · B2B</span>
+          </div>
+        </div>
+        <div class="hero-card" aria-label="Professional snapshot">
+          <h3>Professional Snapshot</h3>
+          <p>
+            9+ years across credit risk assessment, portfolio oversight, and policy-aligned underwriting for mid‑large corporates. Skilled in financial spreading/forecasting, peer analysis, rating rationales, and covenant governance using Moody’s CreditLens, LIQ, and advanced Excel.
+          </p>
         </div>
       </div>
-      <div class="timeline">
-        <article class="role">
-          <div class="role-head">
-            <h3>Acuity Knowledge Partners <small class="muted">— Associate (Credit Risk)</small></h3>
-            <small>2023 – Present</small>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" aria-labelledby="about-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="about-title">About Me</h2>
+          <div class="section-sub">Credible. Analytical. Execution-focused.</div>
+        </div>
+        <div class="card">
+          <p>
+            Finance professional (CA) with deep experience in credit risk, underwriting, and portfolio management across Utilities & Renewables, P3/Infrastructure, Oil & Gas, and B2B lending. Recognized for policy-aligned reviews, stakeholder communication, and mentoring analysts. Comfortable navigating US GAAP/IFRS and integrating PD/LGD/counterparty credit considerations into rating decisions and credit structures.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" aria-labelledby="exp-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="exp-title">Experience</h2>
+          <div class="section-sub">Timeline of roles and impact</div>
+        </div>
+        <div class="timeline" aria-label="Career timeline">
+          <article class="t-item card" aria-labelledby="acuity">
+            <h3 id="acuity">Acuity Knowledge Partner — Delivery Leadership, Credit Risk</h3>
+            <p class="muted">Bangalore, India · 09/2023 — Present</p>
+            <ul class="clean">
+              <li>Oversaw a <strong>US$20B</strong> multi‑sector portfolio (Utilities & Renewables, P3, Oil & Gas); led a team of analysts to ensure client service and effective risk management.</li>
+              <li>Prepared annual and interim credit reviews for mid‑large corporates with exposures <strong>&gt; US$5M</strong>; produced profiles, rating rationales, outlooks, and credit structures aligned with policy.</li>
+              <li>Handled financial spreading and forecasting, ratio trends, credit structuring, and cash‑flow modeling using <strong>Moody’s CreditLens</strong> and Excel; utilized <strong>LIQ</strong> for transaction and exposure monitoring.</li>
+              <li>Consolidated credit analysis, risk ratings, collateral details, and recent developments into comprehensive credit notes; managed covenant monitoring processes end‑to‑end.</li>
+            </ul>
+          </article>
+
+          <article class="t-item card" aria-labelledby="axis">
+            <h3 id="axis">Axis Bank — Credit Manager, B2B Retail & Wholesale</h3>
+            <p class="muted">Pune, India · 09/2021 — 08/2023</p>
+            <ul class="clean">
+              <li>Conducted credit appraisals and due diligence for fund and non‑fund facilities; evaluated creditworthiness via financial analysis, ratings, and research.</li>
+              <li>Served as a <strong>High‑Value Underwriter (₹5Cr+)</strong>, applying PD/LGD and counterparty risk models across working capital, construction finance, project finance, MSME, and Agri B2B lending.</li>
+              <li>Directed approval decisions, ensuring compliance with policies and regulatory standards; executed on‑site due diligence and authored appraisal reports.</li>
+              <li>Managed portfolio monitoring: cash‑flow forecasting, variance analysis, MIS reporting, and post‑disbursement compliance.</li>
+            </ul>
+          </article>
+
+          <article class="t-item card" aria-labelledby="icici">
+            <h3 id="icici">ICICI Bank — Manager, Elite Forex Trade Management</h3>
+            <p class="muted">Nashik, India · 03/2021 — 07/2021</p>
+            <ul class="clean">
+              <li>Advised clients on foreign exchange, working capital (fund/non‑fund), and trade finance; acquired and managed trade/forex clients and transactions.</li>
+            </ul>
+          </article>
+
+          <article class="t-item card" aria-labelledby="cvj">
+            <h3 id="cvj">C. V. Joshi & Co. — Article Assistant (Chartered Accountant)</h3>
+            <p class="muted">Nashik, India · 11/2015 — 11/2018</p>
+            <ul class="clean">
+              <li>Led end‑to‑end accounting, budgeting, and statutory compliance; implemented cost‑efficiency measures and variance analysis under GAAP.</li>
+              <li>Prepared and filed tax/GST returns and audit forms; improved process rigor and reporting precision.</li>
+            </ul>
+          </article>
+
+          <article class="t-item card" aria-labelledby="rts">
+            <h3 id="rts">R. T. Sangore & Co. — Assistant, Audit & Tax</h3>
+            <p class="muted">Nashik, India · 12/2012 — 11/2015</p>
+            <ul class="clean">
+              <li>Managed full accounting cycle for a trading business with annual revenue exceeding ₹8 crore; budgeting, cost planning, reporting, and book closures.</li>
+              <li>Prepared tax returns, VAT audit, and reconciliations; strengthened compliance and controls.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS / CASE STUDIES -->
+    <section id="projects" aria-labelledby="proj-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="proj-title">Strategic Projects & Case Studies</h2>
+          <div class="section-sub">Problem → Action → Result (per resume scope)</div>
+        </div>
+        <div class="grid grid-3">
+          <article class="card" aria-labelledby="p1">
+            <h3 id="p1">Policy‑Aligned Credit Reviews</h3>
+            <p class="muted"><strong>Problem:</strong> Mid‑large corporate reviews required consistent policy alignment and clear rating rationales.</p>
+            <p><strong>Action:</strong> Consolidated financial spreading/forecasting, peer analysis, and outlooks using Moody’s CreditLens and Excel; structured notes aligned to bank policy.</p>
+            <p><strong>Result:</strong> Delivered comprehensive credit notes supporting informed rating decisions and exposure monitoring.</p>
+          </article>
+          <article class="card" aria-labelledby="p2">
+            <h3 id="p2">Covenant Governance Lifecycle</h3>
+            <p class="muted"><strong>Problem:</strong> Need for rigorous end‑to‑end covenant monitoring across a diverse portfolio.</p>
+            <p><strong>Action:</strong> Implemented covenant setup, monitoring, and condonement processes with defined timelines and documentation.</p>
+            <p><strong>Result:</strong> Improved discipline and visibility around testing, escalations, and utilization assessment via LIQ.</p>
+          </article>
+          <article class="card" aria-labelledby="p3">
+            <h3 id="p3">High‑Value Underwriting (₹5Cr+)</h3>
+            <p class="muted"><strong>Problem:</strong> Complex proposals across WC, construction, project finance, MSME/Agri B2B required robust evaluation.</p>
+            <p><strong>Action:</strong> Applied PD/LGD and counterparty models, on‑site diligence, collateral and documentation reviews, and policy‑compliant memos.</p>
+            <p><strong>Result:</strong> Supported sound approvals/rejections aligned with risk frameworks and regulatory standards.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- IMPACT DASHBOARD -->
+    <section id="dashboard" aria-labelledby="dash-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="dash-title">Impact Dashboard</h2>
+          <div class="section-sub">Interactive visuals (illustrative presentation of resume domains)</div>
+        </div>
+        <div class="chart-wrap">
+          <div class="chart" aria-label="Sectors engaged chart">
+            <canvas id="donutSectors" role="img" aria-label="Donut chart showing sectors engaged"></canvas>
+            <small>Visualization of sectors covered: Utilities & Renewables, P3/Infrastructure, Oil & Gas, B2B Lending, FX/Trade, Audit & Tax.</small>
           </div>
-          <ul class="bullets">
-            <li>Supported coverage of a <strong>$20B+ portfolio</strong> across leveraged lending; executed periodic credit reviews, covenant monitoring, and borrower surveillance.</li>
-            <li>Prepared and quality‑checked credit memos and financial spreads (Moody’s CreditLens, LIQ); collaborated with client teams to align risk posture with policy.</li>
-            <li>Led day‑to‑day delivery for a two‑member team; managed TAT, QC, and client communications to maintain on‑time, audit‑ready outputs.</li>
-          </ul>
-          <div class="chips" style="margin-top:8px">
-            <span class="chip">Moody’s CreditLens</span>
-            <span class="chip">LIQ</span>
+          <div class="chart" aria-label="Core capabilities chart">
+            <canvas id="barCapabilities" role="img" aria-label="Bar chart of core capabilities"></canvas>
+            <small>Core capabilities: Credit Reviews, Underwriting, Covenant Monitoring, Portfolio Oversight, Financial Modeling.</small>
+          </div>
+          <div class="chart" aria-label="Experience timeline density chart">
+            <canvas id="lineExperience" role="img" aria-label="Line chart representing years by domain"></canvas>
+            <small>Experience distribution by domain (illustrative aggregation based on roles and dates).</small>
+          </div>
+
+          <!-- Accessible fallback table -->
+          <div class="card" role="region" aria-label="Data table fallback">
+            <table>
+              <thead>
+                <tr><th>Domain</th><th>Coverage (qualitative)</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Utilities & Renewables</td><td>Credit risk assessments, annual/interim reviews</td></tr>
+                <tr><td>P3 / Infrastructure</td><td>Project finance structures (TL, LC, Bridge, Revolver)</td></tr>
+                <tr><td>Oil & Gas</td><td>Portfolio oversight and exposure monitoring</td></tr>
+                <tr><td>B2B Lending</td><td>Underwriting (₹5Cr+), WC & construction finance</td></tr>
+                <tr><td>FX / Trade</td><td>Advisory on forex, trade finance</td></tr>
+                <tr><td>Audit & Tax</td><td>End‑to‑end accounting, compliance, and audits</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESEARCH & STRATEGY -->
+    <section id="research" aria-labelledby="research-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="research-title">Research & Strategic Thinking</h2>
+          <div class="section-sub">Rating rationale, EWS, PD/LGD, and modeling approach</div>
+        </div>
+        <div class="card">
+          <div class="tabs" role="tablist" aria-label="Research tabs">
+            <button class="tab-btn" role="tab" aria-selected="true" aria-controls="tab1" id="tabBtn1">Credit Rating Rationale</button>
+            <button class="tab-btn" role="tab" aria-selected="false" aria-controls="tab2" id="tabBtn2">Early Warning Signals</button>
+            <button class="tab-btn" role="tab" aria-selected="false" aria-controls="tab3" id="tabBtn3">PD/LGD Integration</button>
+            <button class="tab-btn" role="tab" aria-selected="false" aria-controls="tab4" id="tabBtn4">Financial Modeling</button>
+          </div>
+          <div id="tab1" class="tab-panel" role="tabpanel" aria-hidden="false">
+            <p>Construct rating views using qualitative and quantitative inputs: business model resilience, sector dynamics, financial ratios and trends, peer benchmarking, and management assessment. Align outputs with bank policy, documenting rating rationales, outlooks, and mitigants in comprehensive notes.</p>
+          </div>
+          <div id="tab2" class="tab-panel" role="tabpanel" aria-hidden="true">
+            <p>Monitor liquidity, leverage, coverage, utilization, and covenant tests. Track operational indicators and management guidance; review filings (10‑K/10‑Q where applicable) and market developments to surface early indicators for proactive engagement.</p>
+          </div>
+          <div id="tab3" class="tab-panel" role="tabpanel" aria-hidden="true">
+            <p>Incorporate PD/LGD/counterparty risk considerations into structures and approvals, considering collateral profiles, covenants, and sector‑specific risk drivers. Use system models alongside analyst judgment to support decisions.</p>
+          </div>
+          <div id="tab4" class="tab-panel" role="tabpanel" aria-hidden="true">
+            <p>Develop 3‑statement forecasts, scenario/sensitivity analyses, and cash‑flow models. Apply peer and ratio analysis to inform structures, limits, and outlooks. Tools include Moody’s CreditLens, LIQ, and advanced Excel.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="skills-title">Skills & Tools</h2>
+          <div class="section-sub">Finance · Modeling · Tools · Regulations · Leadership</div>
+        </div>
+        <div class="card">
+          <p>
+            <strong>Risk & Underwriting:</strong>
+            <span class="chip">Corporate & Investment Banking</span>
+            <span class="chip">Project Finance</span>
+            <span class="chip">Leveraged Lending</span>
+            <span class="chip">Counterparty Credit Risk</span>
             <span class="chip">Covenant Monitoring</span>
-            <span class="chip">QC Reviews</span>
-          </div>
-        </article>
-
-        <article class="role">
-          <div class="role-head">
-            <h3>Axis Bank <small class="muted">— High‑Value Credit Underwriter</small></h3>
-            <small>2021 – 2023</small>
-          </div>
-          <ul class="bullets">
-            <li>Underwrote high‑value proposals <strong>(₹5Cr+)</strong> across working capital, term loans, and structured facilities; owned end‑to‑end appraisal and sanction notes.</li>
-            <li>Conducted site visits, EWS reviews and post‑sanction monitoring; coordinated with legal, compliance and risk sanctioning units to ensure policy adherence.</li>
-            <li>Standardized covenant and documentation checklists to reduce rework and strengthen first‑line controls.</li>
-          </ul>
-          <div class="chips"><span class="chip">EWS</span><span class="chip">Legal & Compliance</span><span class="chip">Working Capital</span></div>
-        </article>
-
-        <article class="role">
-          <div class="role-head">
-            <h3>ICICI Bank <small class="muted">— Relationship (Forex & Trade Finance)</small></h3>
-            <small>2021</small>
-          </div>
-          <ul class="bullets">
-            <li>Managed client relationships for forex and trade finance; provided cost‑efficient solutions aligned to client hedging and cash‑flow needs.</li>
-            <li>Partnered with product teams to drive utilization and cross‑sell opportunities.</li>
-          </ul>
-        </article>
-
-        <article class="role">
-          <div class="role-head">
-            <h3>C. V. Joshi & Co. <small class="muted">— Senior Associate</small></h3>
-            <small>2015 – 2018</small>
-          </div>
-          <ul class="bullets">
-            <li>Handled accounting, audit support and tax compliance with GAAP alignment for SME clients.</li>
-            <li>Streamlined monthly closes and reconciliations; improved documentation quality for statutory audits.</li>
-          </ul>
-        </article>
-
-        <article class="role">
-          <div class="role-head">
-            <h3>R. T. Sangore & Co. <small class="muted">— Associate</small></h3>
-            <small>2012 – 2015</small>
-          </div>
-          <ul class="bullets">
-            <li>Foundational experience across bookkeeping, tax filings and client coordination.</li>
-          </ul>
-        </article>
-
-        <article class="role">
-          <div class="role-head">
-            <h3>Education & Certifications</h3>
-            <small></small>
-          </div>
-          <ul class="bullets">
-            <li><strong>Chartered Accountant (ICAI)</strong> — 2021</li>
-          </ul>
-          <div class="chips"><span class="chip">Rising Star Award</span><span class="chip">Leadership Training</span><span class="chip">RBI Workshop</span></div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- Projects -->
-  <section id="projects">
-    <div class="container">
-      <div class="section-head">
-        <h2>Projects</h2>
-        <span class="tag">Outcome‑oriented work highlights (sanitized)</span>
-      </div>
-      <div class="cards">
-        <article class="card card-pad">
-          <span class="tag">Credit Ops</span>
-          <h4>Credit Review TAT Optimization</h4>
-          <p>Mapped review workflow, introduced standardized memo templates and a QC checklist; improved on‑time delivery and reduced back‑and‑forth with stakeholders.</p>
-          <div class="chips"><span class="chip">Process Design</span><span class="chip">QC</span><span class="chip">Stakeholder Mgmt</span></div>
-        </article>
-        <article class="card card-pad">
-          <span class="tag">Risk Analytics (Demo)</span>
-          <h4>Covenant & Early Warning Dashboard</h4>
-          <p>Built an illustrative dashboard to visualize covenant flags, PD/LGD bands and utilization outliers for portfolio surveillance. <span class="muted">(sample, anonymized data)</span></p>
-          <canvas id="chart2" height="120" aria-label="Demo chart: covenant flags"></canvas>
-        </article>
-        <article class="card card-pad">
-          <span class="tag">Policy</span>
-          <h4>Underwriting Playbook</h4>
-          <p>Compiled best‑practice guidance for high‑value proposals (₹5Cr+): financial spreading, sensitivity checks, sector notes, security and covenant standards.</p>
-          <div class="chips"><span class="chip">Underwriting</span><span class="chip">Policy</span><span class="chip">Governance</span></div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- Research -->
-  <section id="research">
-    <div class="container">
-      <div class="section-head">
-        <h2>Research</h2>
-        <span class="tag">Selected themes & samples</span>
-      </div>
-      <div class="cards">
-        <article class="card card-pad">
-          <span class="tag">Leveraged Lending</span>
-          <h4>Sector Risk Notes</h4>
-          <p>Prepared concise sector views to inform borrower risk: leverage/coverage trends, demand signals, and covenant headroom. <em>Sample memo available on request.</em></p>
-        </article>
-        <article class="card card-pad">
-          <span class="tag">Surveillance</span>
-          <h4>EWS & Covenant Breach Playbook</h4>
-          <p>Framework to triage EWS signals, assess breach materiality and align action plans with policy.</p>
-        </article>
-        <article class="card card-pad">
-          <span class="tag">Policy & Regulation</span>
-          <h4>Regulatory Alignment Briefs</h4>
-          <p>Short briefs to interpret guidance and translate into first‑line controls and documentation standards.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- Skills -->
-  <section id="skills">
-    <div class="container">
-      <div class="section-head">
-        <h2>Skills</h2>
-        <span class="tag">ATS‑friendly keyword clusters</span>
-      </div>
-      <div class="skill-groups">
-        <div class="card card-pad">
-          <h4>Core</h4>
-          <div class="chips">
-            <span class="chip">Credit Risk Assessment</span>
-            <span class="chip">Portfolio Management</span>
-            <span class="chip">Financial Analysis</span>
-            <span class="chip">Strategic Advisory</span>
-          </div>
-        </div>
-        <div class="card card-pad">
-          <h4>Technical</h4>
-          <div class="chips">
-            <span class="chip">Moody’s CreditLens</span>
-            <span class="chip">Loan IQ (LIQ)</span>
-            <span class="chip">MS Excel (Macros)</span>
-            <span class="chip">Finacle</span>
-            <span class="chip">Tally ERP</span>
-          </div>
-        </div>
-        <div class="card card-pad">
-          <h4>Modeling</h4>
-          <div class="chips">
+            <span class="chip">Portfolio Oversight</span>
+          </p>
+          <p>
+            <strong>Modeling & Analysis:</strong>
+            <span class="chip">3‑Statement Modeling</span>
             <span class="chip">DCF</span>
             <span class="chip">LBO</span>
-            <span class="chip">Cash‑Flow Projections</span>
-            <span class="chip">Covenant Monitoring</span>
-          </div>
-        </div>
-        <div class="card card-pad">
-          <h4>Leadership</h4>
-          <div class="chips">
-            <span class="chip">Mentorship</span>
+            <span class="chip">Scenario & Sensitivity</span>
+            <span class="chip">Cash‑Flow Forecasting</span>
+            <span class="chip">Peer/Ratio Analysis</span>
+          </p>
+          <p>
+            <strong>Frameworks & Accounting:</strong>
+            <span class="chip">PD / LGD / EAD</span>
+            <span class="chip">US GAAP</span>
+            <span class="chip">IFRS</span>
+          </p>
+          <p>
+            <strong>Sectors:</strong>
+            <span class="chip">Utilities & Renewables</span>
+            <span class="chip">P3 / Infrastructure</span>
+            <span class="chip">Oil & Gas</span>
+            <span class="chip">Real Estate / Structured Credit</span>
+            <span class="chip">MSME / Agri B2B</span>
+            <span class="chip">FX / Trade</span>
+          </p>
+          <p>
+            <strong>Tools:</strong>
+            <span class="chip">Moody’s CreditLens</span>
+            <span class="chip">LIQ</span>
+            <span class="chip">Excel (Macros)</span>
+            <span class="chip">PowerPoint</span>
+            <span class="chip">Word</span>
+            <span class="chip">Finacle</span>
+            <span class="chip">Tally ERP</span>
+          </p>
+          <p>
+            <strong>Leadership & Ops:</strong>
+            <span class="chip">Team Leadership & Mentoring</span>
+            <span class="chip">Quality Control / Review</span>
             <span class="chip">Stakeholder Management</span>
-            <span class="chip">Negotiation</span>
-            <span class="chip">Client Service</span>
+            <span class="chip">Training</span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CREDENTIALS -->
+    <section id="awards" aria-labelledby="cred-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="cred-title">Certifications, Education & Awards</h2>
+          <div class="section-sub">Lux card grid</div>
+        </div>
+        <div class="grid grid-3">
+          <div class="card">
+            <h3>Chartered Accountant (ICAI)</h3>
+            <p class="muted">2015 — 2021</p>
+          </div>
+          <div class="card">
+            <h3>B.Com, Business Management</h3>
+            <p class="muted">University of Pune · 2012 — 2015</p>
+          </div>
+          <div class="card">
+            <h3>HSC (Accountancy & Finance)</h3>
+            <p class="muted">LVH College · 2011 — 2012</p>
+          </div>
+          <div class="card">
+            <h3>Rising Star Award</h3>
+            <p class="muted">Acuity Knowledge Partner</p>
+          </div>
+          <div class="card">
+            <h3>Masterclass on Leadership</h3>
+            <p class="muted">ISB & ICAI</p>
+          </div>
+          <div class="card">
+            <h3>RBI NAMCAB Workshop</h3>
+            <p class="muted">Two‑day workshop on financial & banking practices</p>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Contact -->
-  <section id="contact">
+    <!-- CONTACT -->
+    <section id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="contact-title">Contact</h2>
+          <div class="section-sub">Let’s connect</div>
+        </div>
+        <div class="grid grid-2">
+          <div class="card">
+            <p><strong>Phone:</strong> <a href="tel:+918888634620">+91 88886 34620</a></p>
+            <p><strong>Email:</strong> <a href="mailto:ca.mvgupta@gmail.com">ca.mvgupta@gmail.com</a></p>
+            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/acamanish/" target="_blank" rel="noopener">linkedin.com/in/acamanish</a></p>
+            <p><strong>Resume:</strong> <a href="https://drive.google.com/file/d/1JnM9XfpmjLzOmsI1ekdBGfuK4vSPspfn/view?usp=drivesdk" target="_blank" rel="noopener">Download PDF</a></p>
+          </div>
+          <div class="card" role="form" aria-label="Contact form">
+            <form id="contactForm" novalidate>
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" placeholder="Your name" required aria-required="true" />
+
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" placeholder="you@example.com" required aria-required="true" />
+
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="How can we collaborate?" required aria-required="true"></textarea>
+
+              <button class="btn btn-primary" type="submit">Send</button>
+              <p id="formStatus" class="muted" role="status" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
     <div class="container">
-      <div class="section-head">
-        <h2>Contact</h2>
-        <span class="tag">Let’s connect</span>
-      </div>
-      <div class="contact">
-        <form class="card card-pad" onsubmit="sendMail(event)">
-          <div class="row"><label class="sr-only" for="name">Name</label><input id="name" class="input" placeholder="Your name" required></div>
-          <div class="row"><label class="sr-only" for="email">Email</label><input id="email" type="email" class="input" placeholder="Your email" required></div>
-          <div class="row"><label class="sr-only" for="msg">Message</label><textarea id="msg" class="input" placeholder="How can I help?" rows="5" required></textarea></div>
-          <div class="row"><button class="btn primary" type="submit">Send Message</button><span class="muted">or email: <a href="mailto:ca.mvgupta@gmail.com">ca.mvgupta@gmail.com</a></span></div>
-        </form>
-        <div class="card card-pad">
-          <h4>Connect</h4>
-          <p class="muted">Feel free to reach out for roles in credit risk, leveraged lending, underwriting, or strategy. Open to opportunities with global banks, asset managers, and consulting firms.</p>
-          <div class="row" style="margin-top:10px">
-            <a class="btn" href="https://www.linkedin.com/in/REPLACE_LINKEDIN" target="_blank" rel="noopener">LinkedIn</a>
-            <a class="btn" href="assets/Manish_Gupta_Resume.pdf" download>Download Resume</a>
-          </div>
-          <p class="muted" style="margin-top:10px">Location: Mumbai, India • Willing to relocate</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <footer>
-    <div class="container row">
-      <span>© <span id="year"></span> Manish Gupta</span>
-      <span class="right">Designed for recruiters at top‑tier finance & consulting firms</span>
+      © <span id="year"></span> Manish Gupta. All rights reserved.
     </div>
   </footer>
 
-  <a href="#about" id="toTop" class="btn primary to-top" aria-label="Back to top">↑</a>
-
-  <!-- Chart.js CDN -->
-  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js" integrity="sha384-0" crossorigin="anonymous"></script>
   <script>
-    // Year + back-to-top
-    document.getElementById('year').textContent = new Date().getFullYear();
-    const toTop = document.getElementById('toTop');
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 300) toTop.classList.add('show'); else toTop.classList.remove('show');
+    // --- Theme handling (localStorage + prefers-color-scheme) ---
+    (function initTheme(){
+      const stored = localStorage.getItem('theme');
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      const theme = stored || (prefersDark ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', theme);
+      const toggle = document.getElementById('themeToggle');
+      if (toggle) toggle.setAttribute('aria-pressed', theme === 'dark');
+    })();
+
+    document.getElementById('themeToggle').addEventListener('click', () => {
+      const current = document.documentElement.getAttribute('data-theme');
+      const next = current === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      localStorage.setItem('theme', next);
+      document.getElementById('themeToggle').setAttribute('aria-pressed', next === 'dark');
     });
 
-    // Mailto helper
-    function sendMail(e){
-      e.preventDefault();
-      const name = document.getElementById('name').value.trim();
-      const email = document.getElementById('email').value.trim();
-      const msg = document.getElementById('msg').value.trim();
-      const body = encodeURIComponent(`Hi Manish,%0D%0A%0D%0A${msg}%0D%0A%0D%0A— ${name} (${email})`);
-      window.location.href = `mailto:ca.mvgupta@gmail.com?subject=Portfolio%20Inquiry&body=${body}`;
-    }
+    // --- Mobile menu ---
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    hamburger.addEventListener('click', () => {
+      const expanded = hamburger.getAttribute('aria-expanded') === 'true';
+      hamburger.setAttribute('aria-expanded', !expanded);
+      mobileMenu.classList.toggle('open');
+      mobileMenu.setAttribute('aria-modal', !expanded);
+      if (!expanded) mobileMenu.querySelector('a')?.focus();
+      else hamburger.focus();
+    });
+    mobileMenu.addEventListener('click', (e) => {
+      if (e.target.tagName === 'A') {
+        hamburger.setAttribute('aria-expanded', 'false');
+        mobileMenu.classList.remove('open');
+        mobileMenu.setAttribute('aria-modal', 'false');
+      }
+    });
 
-    // Charts (sample/anonymized data)
-    // Chart 1: Portfolio risk view
-    const c1 = document.getElementById('chart1');
-    if (c1) {
-      new Chart(c1, {
-        type: 'line',
-        data: {
-          labels: ['Q1','Q2','Q3','Q4','Q5','Q6','Q7','Q8'],
-          datasets: [
-            { label: 'PD (bps)', data:[45,48,50,47,46,44,49,43]},
-            { label: 'LGD (%)', data:[32,31,30,33,34,32,31,30]},
-            { label: 'Utilization (%)', data:[68,72,75,70,73,71,74,76] },
-          ]
-        },
-        options: {
-          responsive:true,
-          plugins:{ legend:{labels:{color:'#cfe2f5'} } },
-          scales:{
-            x:{ ticks:{color:'#9fb3c8'}, grid:{color:'#1b2b44'} },
-            y:{ ticks:{color:'#9fb3c8'}, grid:{color:'#1b2b44'} }
+    // --- Smooth focus on anchor navigation for a11y ---
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', (e) => {
+        const id = a.getAttribute('href');
+        if (id.length > 1) {
+          const target = document.querySelector(id);
+          if (target) {
+            setTimeout(() => target.setAttribute('tabindex', '-1'), 0);
+            setTimeout(() => target.focus({preventScroll:true}), 300);
           }
         }
       });
+    });
+
+    // --- Parallax background (gentle) ---
+    const hero = document.querySelector('.hero');
+    const onScroll = () => {
+      const y = window.scrollY * 0.2;
+      hero.style.setProperty('--parallax', y + 'px');
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+
+    // --- Year ---
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // --- Tabs (Research) ---
+    const tabs = [
+      {btn: 'tabBtn1', panel: 'tab1'},
+      {btn: 'tabBtn2', panel: 'tab2'},
+      {btn: 'tabBtn3', panel: 'tab3'},
+      {btn: 'tabBtn4', panel: 'tab4'}
+    ];
+    tabs.forEach(({btn, panel}) => {
+      const b = document.getElementById(btn);
+      const p = document.getElementById(panel);
+      b.addetab = () => {
+        tabs.forEach(({btn: bb, panel: pp}) => {
+          document.getElementById(bb).setAttribute('aria-selected', 'false');
+          document.getElementById(pp).setAttribute('aria-hidden', 'true');
+        });
+        b.setAttribute('aria-selected', 'true');
+        p.setAttribute('aria-hidden', 'false');
+      };
+      b.addEventListener('click', b.addetab);
+      b.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); b.addetab(); }
+      });
+    });
+
+    // --- Contact form validation + mailto fallback ---
+    const form = document.getElementById('contactForm');
+    const status = document.getElementById('formStatus');
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const name = form.name.value.trim();
+      const email = form.email.value.trim();
+      const message = form.message.value.trim();
+      if (!name || !email || !message) {
+        status.textContent = 'Please complete all fields.';
+        return;
+      }
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(email)) {
+        status.textContent = 'Please enter a valid email address.';
+        return;
+      }
+      const subject = encodeURIComponent('Portfolio Contact — Manish Gupta');
+      const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`);
+      window.location.href = `mailto:ca.mvgupta@gmail.com?subject=${subject}&body=${body}`;
+      status.textContent = 'Opening email client…';
+    });
+
+    // --- Simple Canvas Charts (Vanilla JS) ---
+    function drawDonut(canvas, segments, labels) {
+      const ctx = canvas.getContext('2d');
+      const dpr = window.devicePixelRatio || 1;
+      const w = canvas.clientWidth * dpr, h = canvas.clientHeight * dpr;
+      canvas.width = w; canvas.height = h;
+      const cx = w/2, cy = h/2, r = Math.min(w,h)/2 - 10, inner = r * 0.6;
+      const total = segments.reduce((a,b)=>a+b,0);
+      let start = -Math.PI/2;
+      segments.forEach((val, i) => {
+        const angle = (val/total) * Math.PI*2;
+        ctx.beginPath();
+        ctx.moveTo(cx, cy);
+        ctx.arc(cx, cy, r, start, start+angle);
+        ctx.closePath();
+        ctx.fillStyle = ['#d4af37','#7a5cff','#2ecc71','#8899aa','#ff9f43','#00c0ef'][i%6];
+        ctx.fill();
+        start += angle;
+      });
+      // hole
+      ctx.globalCompositeOperation = 'destination-out';
+      ctx.beginPath(); ctx.arc(cx, cy, inner, 0, Math.PI*2); ctx.fill();
+      ctx.globalCompositeOperation = 'source-over';
+      // label ring
+      ctx.beginPath(); ctx.arc(cx, cy, inner, 0, Math.PI*2); ctx.lineWidth = 2; ctx.strokeStyle = 'rgba(255,255,255,.25)'; ctx.stroke();
     }
 
-    // Chart 2: Covenant flags by severity
-    const c2 = document.getElementById('chart2');
-    if (c2) {
-      new Chart(c2, {
-        type: 'bar',
-        data: {
-          labels: ['Leverage','DSCR','Interest Cover','Liquidity','Net Worth'],
-          datasets:[
-            { label: 'Advisory Watch', data:[6,4,5,3,2] },
-            { label: 'Breach', data:[2,1,2,1,0] }
-          ]
-        },
-        options:{
-          responsive:true,
-          plugins:{ legend:{labels:{color:'#cfe2f5'} } },
-          scales:{ x:{ticks:{color:'#9fb3c8'}, grid:{color:'#1b2b44'}}, y:{ticks:{color:'#9fb3c8'}, grid:{color:'#1b2b44'}} }
-        }
+    function drawBar(canvas, values, labels) {
+      const ctx = canvas.getContext('2d');
+      const dpr = window.devicePixelRatio || 1;
+      const w = canvas.clientWidth * dpr, h = canvas.clientHeight * dpr;
+      canvas.width = w; canvas.height = h;
+      const pad = 20 * dpr; const max = Math.max(...values) || 1;
+      const bw = (w - pad*2) / values.length * 0.7; // bar width
+      values.forEach((v, i) => {
+        const x = pad + i * ((w - pad*2) / values.length) + ((w - pad*2) / values.length - bw)/2;
+        const bh = (h - pad*2) * (v / max);
+        const y = h - pad - bh;
+        ctx.fillStyle = ['#d4af37','#7a5cff','#2ecc71','#8899aa','#ff9f43'][i%5];
+        ctx.fillRect(x, y, bw, bh);
       });
     }
+
+    function drawLine(canvas, points) {
+      const ctx = canvas.getContext('2d');
+      const dpr = window.devicePixelRatio || 1;
+      const w = canvas.clientWidth * dpr, h = canvas.clientHeight * dpr;
+      canvas.width = w; canvas.height = h;
+      const pad = 24 * dpr; const max = Math.max(...points) || 1;
+      ctx.beginPath();
+      points.forEach((p, i) => {
+        const x = pad + i * ((w - pad*2) / (points.length - 1));
+        const y = h - pad - (h - pad*2) * (p / max);
+        i ? ctx.lineTo(x, y) : ctx.moveTo(x, y);
+      });
+      ctx.lineWidth = 3; ctx.strokeStyle = '#d4af37'; ctx.stroke();
+    }
+
+    // Provide illustrative values without inventing performance claims.
+    // Values represent category counts/coverage derived from resume domains.
+    const sectorCounts = [1,1,1,1,1,1]; // equal slices for categories listed in resume
+    const capabilityCounts = [1,1,1,1,1];
+    const experienceCurve = [1,2,3,3,4,5]; // generic growth curve (illustrative, not a performance metric)
+
+    const donut = document.getElementById('donutSectors');
+    const bar = document.getElementById('barCapabilities');
+    const line = document.getElementById('lineExperience');
+
+    function drawAllCharts(){
+      drawDonut(donut, sectorCounts);
+      drawBar(bar, capabilityCounts);
+      drawLine(line, experienceCurve);
+    }
+    drawAllCharts();
+    window.addEventListener('resize', drawAllCharts);
   </script>
 </body>
 </html>
